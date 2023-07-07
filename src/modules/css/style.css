@@ -1,0 +1,54 @@
+header{
+    background-color: rgba(0, 0, 0, 0.597);
+    height: 120px;
+}
+
+h2{
+    color: white;
+    margin: auto;
+}
+
+.modelPicBackground{
+    height: 400px;
+    position: relative;
+}
+
+.item-pic{
+    width: 186px;
+    height: 60px;
+    opacity: 0.8;
+    position: absolute;
+    left: 71px;
+    right: 71px;
+    top: 105px;
+}
+
+.item-content{
+    background-color: rgba(255, 166, 0, 0.468);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.item-title{
+    font-weight: bold;
+    color: blue;
+}
+
+.item-desc{
+    font-weight: bold;
+    color: white;
+}
+
+.modelPic{
+    height: 100%;
+    width: auto;
+}
+
+.itemBox{
+    background-color: white;
+    width: 100%;
+    padding: 60px 30px;
+}
