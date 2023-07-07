@@ -84,7 +84,9 @@ export default class Body extends Component {
               width: "100%",
               height: "auto",
             }}
-            onClick={()=>{this.changeGlass(item.id)}}
+            onClick={() => {
+              this.changeGlass(item.id);
+            }}
             src={item.url}
             alt=""
           />
@@ -95,6 +97,8 @@ export default class Body extends Component {
   };
 
   changeGlass = (id) => {
+    document.getElementById("item-pic").style.display = "block";
+    document.getElementById("item-content").style.display = "block";
     listProduct.map((item) => {
       if (item.id === id) {
         this.setState({
@@ -117,8 +121,18 @@ export default class Body extends Component {
               src="../../public/images/glassesImage/model.jpg"
               alt=""
             />
-            <img className="item-pic" src={this.state.itemImg} alt="" />
-            <div className="item-content">
+            <img
+              className="item-pic"
+              id="item-pic"
+              style={{ display: "none" }}
+              src={this.state.itemImg}
+              alt=""
+            />
+            <div
+              className="item-content"
+              id="item-content"
+              style={{ display: "none" }}
+            >
               <h5 className="item-title">{this.state.itemTitle}</h5>
               <p className="item-desc">{this.state.itemDesc}</p>
             </div>
