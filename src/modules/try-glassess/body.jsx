@@ -84,7 +84,7 @@ export default class Body extends Component {
               width: "100%",
               height: "auto",
             }}
-            onClick={this.changeGlass(item.id)}
+            onClick={()=>{this.changeGlass(item.id)}}
             src={item.url}
             alt=""
           />
